@@ -75,7 +75,7 @@
     "course": "Algebra 1",
     "keywords": "algebra 1 linear equations slope intercept graphing writing point slope two points",
     "intro": "Rearrange an equation so y is by itself and the equation reads y = mx + b.",
-    "notes": "Move the x-term to the other side by adding or subtracting. Then divide every term by the coefficient of y, if needed.",
+    "notes": "resources/slope-intercept-notes.png",
     "examples": [
       "Example: 2x + y = 7\nSubtract 2x from both sides: y = -2x + 7."
     ],
