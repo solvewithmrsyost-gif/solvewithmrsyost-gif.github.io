@@ -71,31 +71,52 @@
   },
   {
     "id": "writing-linear-equations",
-    "title": "Writing Linear Equations",
+    "title": "Writing Equations in Slope-Intercept Form",
     "course": "Algebra 1",
-    "keywords": "algebra 1 writing linear equations slope intercept point slope",
-    "intro": "",
-    "notes": "",
-    "examples": [],
-    "video": "",
-    "pdf": "",
-    "image": "",
-    "practice": [],
-    "published": false
+    "keywords": "algebra 1 linear equations slope intercept graphing writing point slope two points",
+    "intro": "Rearrange an equation so y is by itself and the equation reads y = mx + b.",
+    "notes": "Move the x-term to the other side by adding or subtracting. Then divide every term by the coefficient of y, if needed.",
+    "examples": [
+      "Example: 2x + y = 7\nSubtract 2x from both sides: y = -2x + 7."
+    ],
+    "video": "https://www.youtube.com/watch?v=xnFk2eOpBd8",
+    "pdf": "resources/writing-slope-intercept.pdf",
+    "image": "resources/writing-slope-intercept.png",
+    "practice": [
+      {
+        "question": "Rewrite x + y = 5 in slope-intercept form. (Use y=-x+5.)",
+        "answer": "y=-x+5|y=5-x",
+        "hint": "Subtract x from both sides."
+      }
+    ],
+    "published": true
   },
   {
     "id": "graphing-linear-equations",
-    "title": "Graphing Linear Equations",
+    "title": "Graphing in Slope-Intercept Form",
     "course": "Algebra 1",
-    "keywords": "algebra 1 graphing linear equations graph slope intercept",
-    "intro": "",
-    "notes": "",
-    "examples": [],
+    "keywords": "algebra 1 linear equations slope intercept graphing writing point slope two points",
+    "intro": "Identify the y-intercept and slope, then graph the line one step at a time.",
+    "notes": "Start with y = mx + b. Plot b on the y-axis. Use m as rise over run to find a second point, then draw your line.",
+    "examples": [
+      "Example: y = 2x + 1\nStart at (0, 1). Rise 2 and run 1 to (1, 3). Draw the line through both points."
+    ],
     "video": "",
-    "pdf": "",
-    "image": "",
-    "practice": [],
-    "published": false
+    "pdf": "resources/graphing-slope-intercept.pdf",
+    "image": "resources/graphing-slope-intercept.png",
+    "practice": [
+      {
+        "question": "For y = 2x + 1, what is the y-intercept? (Enter a number.)",
+        "answer": "1",
+        "hint": "Look for b in y = mx + b."
+      },
+      {
+        "question": "For y = -3x + 4, what is the slope?",
+        "answer": "-3",
+        "hint": "The slope is the coefficient of x."
+      }
+    ],
+    "published": true
   },
   {
     "id": "systems-by-graphing",
@@ -306,5 +327,49 @@
     "image": "",
     "practice": [],
     "published": false
+  },
+  {
+    "id": "point-slope-to-slope-intercept",
+    "title": "Point-Slope to Slope-Intercept Form",
+    "intro": "Use a slope and a point, then distribute and isolate y.",
+    "notes": "Start with y − y₁ = m(x − x₁). Substitute the slope and given point. Distribute, then isolate y.",
+    "examples": [
+      "Example: m = 2, point (1, 3)\ny − 3 = 2(x − 1)\ny − 3 = 2x − 2\ny = 2x + 1"
+    ],
+    "video": "",
+    "pdf": "resources/point-slope-to-slope-intercept.pdf",
+    "image": "resources/point-slope-to-slope-intercept.png",
+    "practice": [
+      {
+        "question": "Given m = 2 and point (1, 3), write the equation in slope-intercept form.",
+        "answer": "y=2x+1|y=1+2x",
+        "hint": "Substitute into point-slope form, then distribute."
+      }
+    ],
+    "course": "Algebra 1",
+    "keywords": "algebra 1 linear equations slope intercept graphing writing point slope two points",
+    "published": true
+  },
+  {
+    "id": "y-intercept-from-two-points",
+    "title": "Finding the y-Intercept from Two Points",
+    "intro": "Calculate the slope from two points, then substitute to solve for b.",
+    "notes": "Find m = (y₂ − y₁)/(x₂ − x₁). Substitute m and either point into y = mx + b. Solve for b.",
+    "examples": [
+      "Example: (1, 3) and (3, 7)\nm = (7 − 3)/(3 − 1) = 2\n3 = 2(1) + b, so b = 1."
+    ],
+    "video": "",
+    "pdf": "resources/y-intercept-from-two-points.pdf",
+    "image": "resources/y-intercept-from-two-points.png",
+    "practice": [
+      {
+        "question": "The line passes through (1, 3) and (3, 7). What is b?",
+        "answer": "1",
+        "hint": "First find the slope, then use y = mx + b."
+      }
+    ],
+    "course": "Algebra 1",
+    "keywords": "algebra 1 linear equations slope intercept graphing writing point slope two points",
+    "published": true
   }
 ]
