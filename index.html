@@ -120,7 +120,7 @@ function block(title,html){return html?`<div class="lesson-panel"><h2>${title}</
  if(skill.image&&safeUrl(skill.image))h+=`<a href="${esc(resourceUrl(skill.image))}" target="_blank" rel="noopener"><img class="studio-organizer" src="${esc(resourceUrl(skill.image))}" alt="${esc(skill.title)} graphic organizer preview" loading="lazy"></a>`;else h+='<div class="studio-placeholder">Graphic organizer coming soon</div>';
  if(skill.pdf&&safeUrl(skill.pdf))h+=`<a class="btn primary" href="${esc(resourceUrl(skill.pdf))}" target="_blank" rel="noopener">Open printable PDF ↗</a>`;
   h+='</article><article class="studio-tool"><span class="studio-label">NOTES TO KEEP</span><h3>Guided Notes</h3>';
-  const notesImage=skill.guidedNotes||skill.notesImage||skill.notes_image||(isSlope?'resources/slope-intercept-notes.png':'');
+const notesImage=skill.pdf || skill.guidedNotes || skill.notesImage || skill.notes_image || '';
   if(notesImage&&safeUrl(notesImage))h+=`<a href="${esc(resourceUrl(notesImage))}" target="_blank" rel="noopener"><img class="studio-organizer" src="${esc(resourceUrl(notesImage))}" alt="${esc(skill.title)} guided notes" loading="lazy"></a><a class="btn soft" href="${esc(resourceUrl(notesImage))}" target="_blank" rel="noopener">Open notes ↗</a>`;
   else h+='<div class="studio-placeholder">Guided notes coming soon</div>';
   h+='</article></div></div>';
