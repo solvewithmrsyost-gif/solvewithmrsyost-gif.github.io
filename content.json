@@ -74,7 +74,7 @@
     "title": "Writing Equations in Slope-Intercept Form",
     "course": "Algebra 1",
     "keywords": "algebra 1 linear equations slope intercept graphing writing point slope two points",
-    "intro": "Rearrange an equation so y is by itself and the equation reads y = mx + b.",
+    "intro": "Rearrange an equation so y is by itself and the equation reads y = mx + b. Practice makes perfect!",
     "notes": "resources/slope-intercept-notes.png",
     "examples": [
       "Example: 2x + y = 7\nSubtract 2x from both sides: y = -2x + 7."
@@ -89,7 +89,8 @@
         "hint": "Subtract x from both sides."
       }
     ],
-    "published": true
+    "published": true,
+    "guidedNotes": ""
   },
   {
     "id": "graphing-linear-equations",
