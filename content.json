@@ -18,14 +18,17 @@
     "title": "Solving Multi-Step Equations",
     "course": "Algebra 1",
     "keywords": "algebra 1 solving multi-step equations equations distribute combine like terms",
-    "intro": "",
+    "intro": "Learn how to solve multi-step equations by combining like terms, using the distributive property, and applying inverse operations to isolate the variable.",
     "notes": "",
     "examples": [],
     "video": "",
     "pdf": "",
     "image": "",
     "practice": [],
-    "published": false
+    "published": false,
+    "whyLearn": "Multi-step equations help us solve more complex problems by breaking them down into smaller, manageable steps. Learning to combine like terms, use the distributive property, and perform inverse operations builds problem-solving skills and prepares you for more advanced algebra. These skills also help you solve real-world problems involving money, measurements, and unknown values.",
+    "organizerPdf": "resources/1795466505787-_Two-Step-Equations-Multistep-Equations--Guided-Notes---1-.pdf",
+    "guidedNotes": ""
   },
   {
     "id": "solving-inequalities",
