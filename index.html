@@ -119,7 +119,7 @@ function block(title,html){return html?`<div class="lesson-panel"><h2>${title}</
  document.getElementById('skill-intro').textContent=skill.intro||'A little at a time. You can do this.';
  const isSlope=skill.id==='writing-linear-equations';
  const what=isSlope?'Slope-intercept form is a way to write a linear equation: y = mx + b. The m tells us the slope, and b tells us the y-intercept.':(skill.notes||'A clear explanation for this skill is coming soon.');
- const why=isSlope?'It helps you see the slope and y-intercept quickly, making it easier to graph a line.':'Why this skill matters: explanation coming soon.';
+ const why=skill.whyLearn||(isSlope?'It helps you see the slope and y-intercept quickly, making it easier to graph a line.':'Why this skill matters: explanation coming soon.');
  let h=`<div class="studio-intro"><div class="studio-note"><span class="studio-label">01 / THE WHAT</span><h2>What is it?</h2><p>${esc(what)}</p></div><div class="studio-note"><span class="studio-label">02 / THE WHY</span><h2>Why learn it?</h2><p>${esc(why)}</p></div></div>`;
  h+='<div class="studio-watch"><span class="studio-label">WATCH & LEARN</span><h2>See how it’s done</h2><p>A quick lesson, right when you need it.</p>';
  if(skill.video&&safeUrl(skill.video)){const u=safeUrl(skill.video),yt=u.match(/(?:youtu\.be\/|youtube\.com\/watch\?v=|youtube\.com\/embed\/)([\w-]{11})/);h+=yt?`<div class="studio-video"><iframe title="${esc(skill.title)} video" loading="lazy" src="https://www.youtube-nocookie.com/embed/${yt[1]}" allowfullscreen></iframe></div>`:`<a class="btn primary" href="${esc(u)}" target="_blank" rel="noopener">Watch the lesson ↗</a>`}else h+='<div class="studio-placeholder">Video coming soon</div>';
