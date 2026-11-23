@@ -119,7 +119,9 @@
       }
     ],
     "published": true,
-    "guidedNotes": ""
+    "guidedNotes": "",
+    "whyLearn": "Slope-intercept form is one of the quickest and easiest ways to graph linear equations. Instead of making a table of values, you can use the slope and y-intercept to graph a line in just a few steps. This saves time, improves accuracy, and helps you understand how linear relationships work.",
+    "organizerPdf": ""
   },
   {
     "id": "systems-by-graphing",
