@@ -121,7 +121,7 @@ function block(title,html){return html?`<div class="lesson-panel"><h2>${title}</
  if(skill.pdf&&safeUrl(skill.pdf))h+=`<a class="btn primary" href="${esc(resourceUrl(skill.pdf))}" target="_blank" rel="noopener">Open printable PDF ↗</a>`;
   h+='</article><article class="studio-tool"><span class="studio-label">NOTES TO KEEP</span><h3>Guided Notes</h3>';
 const notesImage=skill.pdf || skill.guidedNotes || skill.notesImage || skill.notes_image || '';
-  if(notesImage&&safeUrl(notesImage))h+=`<a href="${esc(resourceUrl(notesImage))}" target="_blank" rel="noopener"><img class="studio-organizer" src="${esc(resourceUrl(notesImage))}" alt="${esc(skill.title)} guided notes" loading="lazy"></a><a class="btn soft" href="${esc(resourceUrl(notesImage))}" target="_blank" rel="noopener">Open notes ↗</a>`;
+if(notesImage&&safeUrl(notesImage)){const url=esc(resourceUrl(notesImage));h+=/\.pdf(?:[?#]|$)/i.test(notesImage)?`<iframe src="${url}#toolbar=0" title="Guided notes PDF preview" loading="lazy" style="width:100%;height:420px;border:0;border-radius:12px;background:white"></iframe><a class="btn soft" href="${url}" target="_blank" rel="noopener">Open notes ↗</a>`:`<a href="${url}" target="_blank" rel="noopener"><img class="studio-organizer" src="${url}" alt="Guided notes" loading="lazy"></a><a class="btn soft" href="${url}" target="_blank" rel="noopener">Open notes ↗</a>`;}
   else h+='<div class="studio-placeholder">Guided notes coming soon</div>';
   h+='</article></div></div>';
  h+='<div class="studio-bottom"><article class="studio-tool"><span class="studio-label">YOUR TURN</span><h2>Try it!</h2>';
